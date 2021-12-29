@@ -1,3 +1,5 @@
+import '@/common/env';
+
 import { defineComponent, ref } from 'vue';
 
 import Counter from '@/components/Counter/Counter';

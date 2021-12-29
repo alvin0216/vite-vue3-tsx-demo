@@ -12,3 +12,18 @@ declare const React: string;
 declare module '*.json';
 declare module '*.png';
 declare module '*.jpg';
+
+declare const PASS_ENV: {
+  value:
+    | 'dev1'
+    | 'dev2'
+    | 'dev3'
+    | 'test1'
+    | 'test2'
+    | 'test3'
+    | 'test'
+    | 'pre'
+    | 'prod';
+  /** 目前在跑的环境 */
+  env: 'dev' | 'test' | 'pre' | 'prod';
+};
