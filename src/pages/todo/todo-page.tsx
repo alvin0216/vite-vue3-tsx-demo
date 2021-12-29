@@ -11,13 +11,7 @@ export default defineComponent({
       <div>
         Home
         <input v-model={state.inputValue} />
-        <button
-          onClick={() => {
-            state.list.push(state.inputValue);
-          }}
-        >
-          确定
-        </button>
+        <button onClick={() => state.list.push(state.inputValue)}>确定</button>
         <ul>
           {state.list.map((item, idx) => (
             <li key={idx}>{item}</li>

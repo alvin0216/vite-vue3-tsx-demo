@@ -1,17 +1,15 @@
 import { defineComponent, ref } from 'vue';
 
-import Counter from '@/components/Counter/Counter';
-
 export default defineComponent({
+  name: 'Counter',
   setup() {
     const count = ref(1);
-    const increase = () => {
-      count.value++;
-    };
-
     return () => (
       <div>
-        <Counter />
+        <h2>Counter</h2>
+        <a-button type="primary" onClick={() => count.value++}>
+          {count.value}
+        </a-button>
       </div>
     );
   },
